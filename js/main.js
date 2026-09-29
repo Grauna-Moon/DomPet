@@ -70,6 +70,21 @@ document.addEventListener("DOMContentLoaded", () => {
     revealEls.forEach((el) => el.classList.add("is-visible"));
   }
 
+  // ---- Botão flutuante do WhatsApp: só aparece depois que o CTA do hero sai de vista ----
+  const floatingWhatsApp = document.querySelector(".floating-whatsapp");
+  const heroWhatsApp = document.getElementById("heroWhatsApp");
+  if (floatingWhatsApp && heroWhatsApp && "IntersectionObserver" in window) {
+    const ctaObserver = new IntersectionObserver(
+      ([entry]) => {
+        floatingWhatsApp.classList.toggle("is-visible", !entry.isIntersecting);
+      },
+      { threshold: 0 }
+    );
+    ctaObserver.observe(heroWhatsApp);
+  } else if (floatingWhatsApp) {
+    floatingWhatsApp.classList.add("is-visible");
+  }
+
   // ---- Navbar shadow on scroll ----
   const navbar = document.querySelector(".navbar");
   if (navbar) {

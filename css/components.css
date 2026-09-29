@@ -218,7 +218,12 @@
   padding: var(--space-3) var(--space-5);
   font-weight: var(--weight-semibold);
   animation: pulse-scale 2.4s ease-in-out infinite;
+  opacity: 0;
+  transform: translateY(16px);
+  pointer-events: none;
+  transition: opacity var(--duration-base) var(--ease-standard), transform var(--duration-base) var(--ease-standard);
 }
+.floating-whatsapp.is-visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
 .floating-whatsapp .icon { width: 1.5em; height: 1.5em; }
 .floating-whatsapp span { display: none; }
 @media (min-width: 640px) { .floating-whatsapp span { display: inline; } }
