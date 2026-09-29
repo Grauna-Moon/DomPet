@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <pattern id="p" width="24" height="24" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <rect width="24" height="24" fill="#F7F5FC"/>
+      <rect width="12" height="24" fill="#E7E2F5"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="480" fill="url(#p)"/>
+  <circle cx="320" cy="200" r="70" fill="#8B70E8" opacity="0.25"/>
+  <text x="320" y="330" font-family="Poppins, sans-serif" font-size="22" fill="#6B6480" text-anchor="middle">Foto real do pet em breve</text>
+</svg>

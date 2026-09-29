@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dom Pet Shop | Banho, Tosa e Cuidado Animal em BH</title>
+<meta name="description" content="Dom Pet Shop: banho, tosa, hidratação e banho de ozônio terapêutico para o seu pet em Dom Cabral, Belo Horizonte. Nota 4,9 no Google com 63 avaliações. Agende pelo WhatsApp." />
+<link rel="icon" href="images/logo.webp" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Dom Pet Shop | Banho, Tosa e Cuidado Animal em BH" />
+<meta property="og:description" content="Cuidado especial para o seu pet em Dom Cabral, Belo Horizonte. Nota 4,9 no Google." />
+<meta property="og:type" content="business.business" />
+<meta property="og:image" content="images/logo.webp" />
+
+<link rel="stylesheet" href="css/tokens.css" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/components.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PetStore",
+  "name": "Dom Pet Shop",
+  "image": "images/logo.webp",
+  "telephone": "+5531982315279",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Cardeal Vasconcelos Motta, 84 - Loja 3",
+    "addressLocality": "Belo Horizonte",
+    "addressRegion": "MG",
+    "postalCode": "30535-370",
+    "addressCountry": "BR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "63"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="navbar">
+  <div class="container navbar__inner">
+    <a href="#top" class="navbar__brand">
+      <img src="images/icon-mark.webp" alt="Dom Pet Shop" />
+    </a>
+    <nav class="navbar__links" aria-label="Navegação principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#ozonio">Banho de Ozônio</a>
+      <a href="#planos">Planos</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#localizacao">Localização</a>
+    </nav>
+    <div class="navbar__actions">
+      <a href="#" data-whatsapp data-wa-message="Olá! Vim pelo site da Dom Pet e gostaria de agendar um horário" class="btn btn--whatsapp btn--sm" style="display:none" id="navCta">
+        <svg class="icon icon--sm icon--whatsapp" viewBox="0 0 24 24"><path d="M12.04 0C5.39 0 0 5.39 0 12.04c0 2.12.55 4.11 1.52 5.83L0 24l6.26-1.5a11.99 11.99 0 0 0 5.78 1.48h.01c6.65 0 12.04-5.39 12.04-12.04C24.09 5.39 18.69 0 12.04 0Zm0 22h-.01a10.09 10.09 0 0 1-5.14-1.41l-.37-.22-3.72.89.9-3.62-.24-.38A9.99 9.99 0 0 1 2 12.04c0-5.51 4.49-10 10.01-10 2.67 0 5.18 1.04 7.07 2.93a9.94 9.94 0 0 1 2.93 7.07c0 5.52-4.49 10-10.01 10Z"/><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.48 0 1.46 1.07 2.87 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35Z"/></svg>
+        WhatsApp
+      </a>
+      <a href="#" data-whatsapp data-wa-message="Olá! Vim pelo site da Dom Pet e gostaria de agendar um horário" class="btn btn--accent btn--sm">Agendar</a>
+      <button class="navbar__toggle" aria-label="Abrir menu">
+        <svg class="icon" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== MOBILE MENU ===================== -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu__header">
+    <img src="images/logo.webp" alt="Dom Pet Shop" style="height:36px" />
+    <button class="mobile-menu__close" aria-label="Fechar menu">
+      <svg class="icon icon--lg" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-menu__links">
+    <a href="#servicos">Serviços</a>
+    <a href="#ozonio">Banho de Ozônio</a>
+    <a href="#planos">Planos</a>
+    <a href="#avaliacoes">Avaliações</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#localizacao">Localização</a>
+  </nav>
+  <div class="mobile-menu__footer">
+    <a href="#" data-whatsapp class="btn btn--whatsapp btn--block">Agendar pelo WhatsApp</a>
+    <a href="tel:+5531982315279" class="btn btn--outline btn--block">(31) 98231-5279</a>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- ===================== OFFER BANNER ===================== -->
+  <div class="offer-banner">
+    <span class="paw-mark" style="width:1em;height:1em;color:var(--color-accent)"></span>
+    <strong>10% OFF</strong> no primeiro banho terapêutico de ozônio! Fale com a gente pelo WhatsApp.
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div>
+        <span class="badge section-heading__eyebrow" style="margin-bottom:1rem"><span class="paw-mark" style="width:0.9em;height:0.9em"></span> Banho · Tosa · Estética Pet</span>
+        <h1>Seu pet ainda mais feliz e cheiroso na <img src="images/wordmark.webp" alt="Dom Pet Shop" class="hero__wordmark" /></h1>
+        <p class="hero__lead">Banho, tosa, hidratação e o exclusivo banho terapêutico de ozônio, com o carinho e a segurança de uma equipe que trata seu pet como se fosse da família, em Dom Cabral, Belo Horizonte.</p>
+        <div class="hero__actions">
+          <a href="#" data-whatsapp data-wa-message="Olá! Vim pelo site da Dom Pet e gostaria de agendar um banho" class="btn btn--whatsapp">
+            <svg class="icon icon--whatsapp" viewBox="0 0 24 24"><path d="M12.04 0C5.39 0 0 5.39 0 12.04c0 2.12.55 4.11 1.52 5.83L0 24l6.26-1.5a11.99 11.99 0 0 0 5.78 1.48h.01c6.65 0 12.04-5.39 12.04-12.04C24.09 5.39 18.69 0 12.04 0Zm0 22h-.01a10.09 10.09 0 0 1-5.14-1.41l-.37-.22-3.72.89.9-3.62-.24-.38A9.99 9.99 0 0 1 2 12.04c0-5.51 4.49-10 10.01-10 2.67 0 5.18 1.04 7.07 2.93a9.94 9.94 0 0 1 2.93 7.07c0 5.52-4.49 10-10.01 10Z"/><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.48 0 1.46 1.07 2.87 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35Z"/></svg>
+            Agendar pelo WhatsApp
+          </a>
+          <a href="#servicos" class="btn btn--outline">Ver serviços</a>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat"><strong>4,9 ★</strong><span>63 avaliações no Google</span></div>
+          <div class="hero__stat"><strong>8 anos+</strong><span>de cuidado com pets em BH</span></div>
+        </div>
+      </div>
+      <div class="hero__media reveal reveal--scale">
+        <span class="hero__blob hero__blob--1"></span>
+        <span class="hero__blob hero__blob--2"></span>
+        <img src="images/hero-pet.webp" alt="Grupo de cães usando laços e gravatas coloridas, prontos após o banho e tosa" onerror="this.src='images/placeholder-hero.svg'" />
+      </div>
+    </div>
+    <svg class="hero__wave" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true">
+      <path fill="currentColor" d="M0 24C240 0 480 48 720 24S1200 0 1440 24V48H0V24Z"/>
+    </svg>
+  </section>
+
+  <!-- ===================== SERVICE GRID ===================== -->
+  <section class="section" id="servicos">
+    <div class="container">
+      <div class="services-layout">
+        <div class="reveal">
+          <span class="section-heading__eyebrow">Nossos serviços</span>
+          <h2>Cuidado completo, do banho à tosa</h2>
+          <p class="services-layout__lead">Serviços individuais pensados para deixar o seu pet limpinho, cheiroso e confortável, sem pressa e sem estresse.</p>
+
+          <ul class="service-list">
+            <li class="service-row">
+              <span class="service-row__icon"><svg class="icon" viewBox="0 0 24 24"><path d="M12 21c4-3 7-6.5 7-10.5A7 7 0 0 0 5 10.5C5 14.5 8 18 12 21Z"/></svg></span>
+              <div class="service-row__text"><h3>Banho + Tosa Higiênica</h3></div>
+            </li>
+            <li class="service-row">
+              <span class="service-row__icon"><svg class="icon" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></span>
+              <div class="service-row__text"><h3>Tosa na máquina e tesoura</h3></div>
+            </li>
+            <li class="service-row">
+              <span class="service-row__icon"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 3"/></svg></span>
+              <div class="service-row__text"><h3>Hidratação simples e ultra</h3></div>
+            </li>
+            <li class="service-row">
+              <span class="service-row__icon"><svg class="icon" viewBox="0 0 24 24"><path d="M4 12h16M4 6h16M4 18h16"/></svg></span>
+              <div class="service-row__text"><h3>Desembolo e remoção de sub-pelo</h3></div>
+            </li>
+            <li class="service-row">
+              <span class="service-row__icon"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3c4 0 7 3 7 7 0 5-7 11-7 11S5 15 5 10c0-4 3-7 7-7Z"/></svg></span>
+              <div class="service-row__text"><h3>Escovação dental</h3></div>
+            </li>
+            <li class="service-row">
+              <span class="service-row__icon"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="2"/><circle cx="7.5" cy="12" r="1.5"/></svg></span>
+              <div class="service-row__text"><h3>Táxi Dog, a gente busca e leva</h3></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="ozonio-panel reveal reveal--scale" id="ozonio">
+          <span class="badge badge--accent">Exclusivo Dom Pet</span>
+          <h3>Banho de Ozônio</h3>
+          <p>Terapêutico e indicado para pets com dermatites, coceiras crônicas, feridas ou sarna.</p>
+          <div class="trait-row">
+            <span class="trait-pill"><svg class="icon icon--sm" viewBox="0 0 24 24"><path d="M12 2 4 7v6c0 5 3.5 7.5 8 9 4.5-1.5 8-4 8-9V7l-8-5Z"/></svg>Anti-inflamatório</span>
+            <span class="trait-pill"><svg class="icon icon--sm" viewBox="0 0 24 24"><path d="m4 12 6 6L20 6"/></svg>Antifúngico</span>
+            <span class="trait-pill"><svg class="icon icon--sm" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m9 12 2 2 4-4"/></svg>Antibacteriano</span>
+            <span class="trait-pill"><svg class="icon icon--sm" viewBox="0 0 24 24"><path d="M12 21c4-3 7-6.5 7-10.5A7 7 0 0 0 5 10.5C5 14.5 8 18 12 21Z"/></svg>Cicatrizante</span>
+          </div>
+          <p class="ozonio-panel__offer">Ganhe 10% OFF no primeiro banho de ozônio.*</p>
+          <a href="#" data-whatsapp data-wa-message="Olá! Quero saber mais sobre o Banho de Ozônio" class="btn btn--whatsapp btn--block">Quero saber mais</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRICING HIGHLIGHT (Planos de Banho) ===================== -->
+  <section class="section section--alt" id="planos">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="section-heading__eyebrow">Planos de banho</span>
+        <h2>Economize e garanta brindes com nossos planos</h2>
+        <p>Com os planos você ganha brindes e o valor do banho é reduzido. Fale com a gente para descobrir qual plano combina com o seu pet.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="card card--hover pricing-card reveal">
+          <span class="badge badge--outline">★ Basic</span>
+          <h3>Plano Basic</h3>
+          <p class="pricing-card__note">Ideal para manter a rotina de higiene em dia.</p>
+          <ul>
+            <li class="is-placeholder">Detalhes do plano em breve. Fale com a gente pelo WhatsApp</li>
+          </ul>
+          <a href="#" data-whatsapp data-wa-message="Olá! Quero saber mais sobre o Plano Basic de banho" class="btn btn--outline btn--block">Saber mais</a>
+        </div>
+
+        <div class="card card--hover pricing-card pricing-card--featured reveal">
+          <span class="badge pricing-card__badge">Mais popular</span>
+          <span class="badge badge--outline">★★ Standard</span>
+          <h3>Plano Standard</h3>
+          <p class="pricing-card__note">O favorito dos nossos clientes.</p>
+          <ul>
+            <li class="is-placeholder">Detalhes do plano em breve. Fale com a gente pelo WhatsApp</li>
+          </ul>
+          <a href="#" data-whatsapp data-wa-message="Olá! Quero saber mais sobre o Plano Standard de banho" class="btn btn--primary btn--block">Saber mais</a>
+        </div>
+
+        <div class="card card--hover pricing-card reveal">
+          <span class="badge badge--outline">★★★ Premium</span>
+          <h3>Plano Premium</h3>
+          <p class="pricing-card__note">Cuidado completo com o máximo de benefícios.</p>
+          <ul>
+            <li class="is-placeholder">Detalhes do plano em breve. Fale com a gente pelo WhatsApp</li>
+          </ul>
+          <a href="#" data-whatsapp data-wa-message="Olá! Quero saber mais sobre o Plano Premium de banho" class="btn btn--outline btn--block">Saber mais</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="section-heading__eyebrow">Galeria</span>
+        <h2>Um cantinho gostoso para o seu pet</h2>
+        <p class="muted">Fotos da loja e da equipe em breve. Por enquanto, um gostinho dos clientes de quatro patas.</p>
+      </div>
+      <div class="gallery reveal">
+        <div class="gallery__item"><img src="images/gallery/pet-01.webp" alt="Dois cães usando laço e gravata borboleta" loading="lazy" /></div>
+        <div class="gallery__item"><img src="images/gallery/pet-02.webp" alt="Border collie usando gravata estampada" loading="lazy" /></div>
+        <div class="gallery__item"><img src="images/gallery/pet-03.webp" alt="Cãozinho usando gravata borboleta estampada" loading="lazy" /></div>
+        <div class="gallery__item"><img src="images/gallery/pet-04.webp" alt="Gato usando gravata estampada" loading="lazy" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIAL GRID (avaliações reais do Google) ===================== -->
+  <section class="section" id="avaliacoes">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="section-heading__eyebrow">O que dizem sobre a gente</span>
+        <h2>Avaliações reais de quem confia na Dom Pet</h2>
+        <div class="google-rating" style="margin-top:var(--space-4)">
+          <span class="google-rating__score">4,9</span>
+          <span class="google-rating__stars">★★★★★</span>
+          <span class="google-rating__count">63 avaliações no Google</span>
+        </div>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="card card--hover review-card reveal">
+          <div class="review-card__stars">★★★★★</div>
+          <p>"Muito boa experiência na Dom Pet. Tratamento nota 10. Nossos pets são tratados com uma atenção personalizada e um carinho especial. Muito profissionais. A Lisa teve um banho seguro, sem estresse e ficou linda!"</p>
+          <div class="review-card__author">
+            <span class="review-card__avatar">F</span>
+            <div><strong>Fabiolla Patricia</strong><span>Avaliação no Google</span></div>
+          </div>
+        </div>
+        <div class="card card--hover review-card reveal">
+          <div class="review-card__stars">★★★★★</div>
+          <p>"Fiquei muito feliz de ter encontrado um cantinho tão gostoso para levar minha cachorrinha para ficar limpinha. Todos da Dom Pet são muito atenciosos e carinhosos! Super recomendo!"</p>
+          <div class="review-card__author">
+            <span class="review-card__avatar">G</span>
+            <div><strong>Guilherme Habib</strong><span>Avaliação no Google</span></div>
+          </div>
+        </div>
+        <div class="card card--hover review-card reveal">
+          <div class="review-card__stars">★★★★★</div>
+          <p>"Ambiente agradável, ótimo atendimento e diversidade de produtos! Localização boa de fácil acesso e atendimento impecável. Os atendentes são muito solícitos, atenciosos e educados."</p>
+          <div class="review-card__author">
+            <span class="review-card__avatar">★</span>
+            <div><strong>Resumo das avaliações</strong><span>Google Maps</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top:var(--space-6)">
+        <a href="https://maps.app.goo.gl/qc5fzTPJcrTgoCkF8" target="_blank" rel="noopener" class="link-arrow">
+          Ver todas as avaliações no Google
+          <svg class="icon icon--sm" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section section--alt" id="sobre">
+    <div class="container hero__grid">
+      <div class="reveal">
+        <span class="section-heading__eyebrow">Sobre a Dom Pet</span>
+        <h2>Uma loja feita com carinho, para toda a comunidade</h2>
+        <p>A Dom Pet Shop é um pet shop acolhedor em Dom Cabral, Belo Horizonte, reconhecido pelos clientes com nota 4,9 em 63 avaliações no Google. Aqui, todo mundo (e todo pet) é bem-vindo.</p>
+      </div>
+      <div class="reveal reveal--scale">
+        <img src="images/team/equipe-01.webp" alt="Dono da Dom Pet Shop sorridente segurando um spitz-alemão fofo" style="aspect-ratio:4/3;object-fit:cover;width:100%;border-radius:var(--radius-large);box-shadow:var(--shadow-large)" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="section">
+    <div class="container container--narrow">
+      <div class="section-heading reveal">
+        <span class="section-heading__eyebrow">Dúvidas frequentes</span>
+        <h2>Perguntas frequentes</h2>
+      </div>
+      <div class="reveal">
+        <div class="faq-item">
+          <button class="faq-item__question">Preciso agendar horário para o banho?
+            <svg class="faq-item__icon icon" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-item__answer"><p>Recomendamos agendar pelo WhatsApp para garantir o melhor horário para o seu pet.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">Vocês oferecem Táxi Dog?
+            <svg class="faq-item__icon icon" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-item__answer"><p>Sim! Buscamos e levamos seu pet com segurança. Consulte disponibilidade e valores pelo WhatsApp.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">O que é o Banho de Ozônio e quando é indicado?
+            <svg class="faq-item__icon icon" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-item__answer"><p>É um banho terapêutico indicado para pets com dermatites, coceiras crônicas, feridas ou sarna, com ação anti-inflamatória, antifúngica, antibacteriana e cicatrizante.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">Quais as formas de pagamento e horário de funcionamento?
+            <svg class="faq-item__icon icon" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-item__answer"><p>Funcionamos de segunda a sexta, a partir das 08:00. Fale com a gente pelo WhatsApp para confirmar horários e formas de pagamento.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LOCATION SECTION ===================== -->
+  <section class="section section--alt" id="localizacao">
+    <div class="container hero__grid">
+      <div class="reveal">
+        <span class="section-heading__eyebrow">Onde estamos</span>
+        <h2>Venha nos visitar em Dom Cabral</h2>
+        <div class="info-list" style="margin-top:var(--space-6)">
+          <div class="info-list__item">
+            <span class="info-list__icon"><svg class="icon" viewBox="0 0 24 24"><path d="M12 21c4-3 7-6.5 7-10.5A7 7 0 0 0 5 10.5C5 14.5 8 18 12 21Z"/><circle cx="12" cy="10.5" r="2.5"/></svg></span>
+            <div><strong>Endereço</strong><p>Rua Cardeal Vasconcelos Motta, 84 - Loja 3, Dom Cabral, Belo Horizonte - MG, 30535-370</p></div>
+          </div>
+          <div class="info-list__item">
+            <span class="info-list__icon"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+            <div><strong>Horário</strong><p>Segunda a sexta, a partir das 08:00</p></div>
+          </div>
+          <div class="info-list__item">
+            <span class="info-list__icon"><svg class="icon icon--whatsapp" viewBox="0 0 24 24"><path d="M12.04 0C5.39 0 0 5.39 0 12.04c0 2.12.55 4.11 1.52 5.83L0 24l6.26-1.5a11.99 11.99 0 0 0 5.78 1.48h.01c6.65 0 12.04-5.39 12.04-12.04C24.09 5.39 18.69 0 12.04 0Zm0 22h-.01a10.09 10.09 0 0 1-5.14-1.41l-.37-.22-3.72.89.9-3.62-.24-.38A9.99 9.99 0 0 1 2 12.04c0-5.51 4.49-10 10.01-10 2.67 0 5.18 1.04 7.07 2.93a9.94 9.94 0 0 1 2.93 7.07c0 5.52-4.49 10-10.01 10Z"/><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.48 0 1.46 1.07 2.87 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35Z"/></svg></span>
+            <div><strong>Telefone / WhatsApp</strong><p><a href="tel:+5531982315279">(31) 98231-5279</a></p></div>
+          </div>
+        </div>
+        <div class="hero__actions" style="margin-top:var(--space-6)">
+          <a href="https://maps.app.goo.gl/qc5fzTPJcrTgoCkF8" target="_blank" rel="noopener" class="btn btn--primary">Ver no Google Maps</a>
+          <a href="#" data-whatsapp class="btn btn--outline">Falar no WhatsApp</a>
+        </div>
+      </div>
+      <div class="reveal">
+        <iframe
+          class="map-frame"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Rua+Cardeal+Vasconcelos+Motta,+84+-+Loja+3,+Dom+Cabral,+Belo+Horizonte+-+MG,+30535-370&output=embed"
+          title="Localização da Dom Pet Shop">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FINAL CTA ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="cta reveal">
+        <h2>Vamos cuidar do seu pet com todo carinho?</h2>
+        <p>Agende agora pelo WhatsApp e garanta 10% OFF no primeiro banho de ozônio.</p>
+        <div class="cta__actions">
+          <a href="#" data-whatsapp data-wa-message="Olá! Vim pelo site da Dom Pet e gostaria de agendar um horário" class="btn btn--accent">
+            <svg class="icon icon--whatsapp" viewBox="0 0 24 24"><path d="M12.04 0C5.39 0 0 5.39 0 12.04c0 2.12.55 4.11 1.52 5.83L0 24l6.26-1.5a11.99 11.99 0 0 0 5.78 1.48h.01c6.65 0 12.04-5.39 12.04-12.04C24.09 5.39 18.69 0 12.04 0Zm0 22h-.01a10.09 10.09 0 0 1-5.14-1.41l-.37-.22-3.72.89.9-3.62-.24-.38A9.99 9.99 0 0 1 2 12.04c0-5.51 4.49-10 10.01-10 2.67 0 5.18 1.04 7.07 2.93a9.94 9.94 0 0 1 2.93 7.07c0 5.52-4.49 10-10.01 10Z"/><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.48 0 1.46 1.07 2.87 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35Z"/></svg>
+            Agendar pelo WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <div class="footer__brand"><img src="images/logo-transparent.webp" alt="Dom Pet Shop" /> Dom Pet Shop</div>
+      <p style="color:rgba(255,255,255,0.7);font-size:var(--text-sm);max-width:32ch">Banho, tosa e cuidado especial para o seu pet, em Dom Cabral, Belo Horizonte.</p>
+    </div>
+    <div>
+      <h4>Navegação</h4>
+      <ul class="footer__links">
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#planos">Planos</a></li>
+        <li><a href="#avaliacoes">Avaliações</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <ul class="footer__links">
+        <li><a href="tel:+5531982315279">(31) 98231-5279</a></li>
+        <li><a href="#" data-whatsapp>WhatsApp</a></li>
+        <li><a href="https://maps.app.goo.gl/qc5fzTPJcrTgoCkF8" target="_blank" rel="noopener">Como chegar</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Endereço</h4>
+      <p style="font-size:var(--text-sm)">Rua Cardeal Vasconcelos Motta, 84 - Loja 3, Dom Cabral, Belo Horizonte - MG</p>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <span>&copy; <span data-year></span> Dom Pet Shop. Todos os direitos reservados.</span>
+    <span style="display:inline-flex;align-items:center;gap:0.4em">Feito com <span class="paw-mark" style="width:0.9em;height:0.9em;color:var(--color-accent)"></span> para pets felizes</span>
+  </div>
+</footer>
+
+<!-- ===================== FLOATING WHATSAPP ===================== -->
+<a href="#" data-whatsapp class="floating-whatsapp" aria-label="Falar no WhatsApp">
+  <svg class="icon icon--whatsapp" viewBox="0 0 24 24"><path d="M12.04 0C5.39 0 0 5.39 0 12.04c0 2.12.55 4.11 1.52 5.83L0 24l6.26-1.5a11.99 11.99 0 0 0 5.78 1.48h.01c6.65 0 12.04-5.39 12.04-12.04C24.09 5.39 18.69 0 12.04 0Zm0 22h-.01a10.09 10.09 0 0 1-5.14-1.41l-.37-.22-3.72.89.9-3.62-.24-.38A9.99 9.99 0 0 1 2 12.04c0-5.51 4.49-10 10.01-10 2.67 0 5.18 1.04 7.07 2.93a9.94 9.94 0 0 1 2.93 7.07c0 5.52-4.49 10-10.01 10Z"/><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.48 0 1.46 1.07 2.87 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35Z"/></svg>
+  <span>Falar no WhatsApp</span>
+</a>
+
+<style>
+  /* Placeholder de imagem — claramente identificado, sem simular foto real */
+  .placeholder-img {
+    background: repeating-linear-gradient(135deg, var(--color-surface), var(--color-surface) 10px, var(--color-border) 10px, var(--color-border) 20px);
+    display: flex; align-items: center; justify-content: center;
+    position: relative; color: var(--color-muted); font-size: var(--text-xs); font-weight: var(--weight-semibold);
+  }
+  .placeholder-img::after {
+    content: attr(data-label);
+    background: rgba(255,255,255,0.9);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-pill);
+  }
+</style>
+
+<script>
+  document.getElementById('mobileMenu') && document.querySelector('.navbar__toggle')?.setAttribute('aria-controls','mobileMenu');
+  document.querySelector('.navbar__toggle')?.addEventListener('click', () => document.getElementById('mobileMenu').classList.add('is-open'));
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>

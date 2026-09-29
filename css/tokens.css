@@ -1,0 +1,113 @@
+/* =========================================================
+   DESIGN TOKENS
+   Fonte de verdade para identidade visual. Trocar cliente =
+   trocar estes valores (e a fonte importada em base.css).
+
+   Escala de espaçamento: base 8px (grid padrão de mercado).
+   Tipografia: fluida via clamp() — escala suavemente entre
+   mobile e desktop sem saltos bruscos por media query.
+   ========================================================= */
+:root {
+  /* ---- Cores de marca (extraídas da logo) ---- */
+  --color-primary: #634EB0;
+  --color-primary-dark: #4C3B8A;
+  --color-primary-light: #8977C9;
+  --color-secondary: #2E2350;
+  --color-accent: #F9D178;
+  --color-accent-dark: #E3AE45;
+  --color-pink: #FF6B9D;
+
+  /* ---- Superfícies e texto ---- */
+  --color-background: #FFFDF9;
+  --color-surface: #F5F0E6;
+  --color-surface-alt: #FBEFD9;
+  --color-text: #241A3D;
+  --color-muted: #6B6480;
+  --color-border: #E9E1D2;
+  --color-on-primary: #FFFFFF;
+  --color-on-accent: #2A1E4D;
+
+  /* ---- Estados ---- */
+  --color-success: #3FB871;
+  --color-whatsapp: #25D366;
+
+  /* ---- Tipografia ---- */
+  --font-heading: "Baloo 2", "Poppins", system-ui, sans-serif;
+  --font-body: "Poppins", system-ui, -apple-system, sans-serif;
+
+  /* Escala fluida: min → max entre viewport 375px e 1440px */
+  --text-xs: clamp(0.75rem, 0.72rem + 0.13vw, 0.8125rem);
+  --text-sm: clamp(0.8125rem, 0.78rem + 0.16vw, 0.9375rem);
+  --text-base: clamp(0.9375rem, 0.9rem + 0.2vw, 1.0625rem);
+  --text-md: clamp(1.0625rem, 1rem + 0.3vw, 1.25rem);
+  --text-lg: clamp(1.1875rem, 1.1rem + 0.45vw, 1.5rem);
+  --text-xl: clamp(1.375rem, 1.2rem + 0.85vw, 1.875rem);
+  --text-2xl: clamp(1.625rem, 1.35rem + 1.35vw, 2.375rem);
+  --text-3xl: clamp(1.875rem, 1.5rem + 1.85vw, 3rem);
+  --text-4xl: clamp(2.25rem, 1.7rem + 2.6vw, 3.75rem);
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+
+  --leading-tight: 1.15;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.7;
+
+  /* ---- Espaçamento (grid de 8px) ---- */
+  --space-05: 0.25rem;  /* 4px  — micro-ajustes (ícone+texto) */
+  --space-1:  0.5rem;   /* 8px  — unidade base */
+  --space-2:  0.75rem;  /* 12px */
+  --space-3:  1rem;     /* 16px — padding padrão de componente */
+  --space-4:  1.5rem;   /* 24px — gap entre itens relacionados */
+  --space-5:  2rem;     /* 32px — gap entre blocos */
+  --space-6:  2.5rem;   /* 40px */
+  --space-7:  3rem;     /* 48px — separação de sub-seções */
+  --space-8:  4rem;     /* 64px */
+  --space-9:  5rem;     /* 80px */
+  --space-10: 6rem;     /* 96px — respiro entre seções (mobile) */
+  --space-11: 8rem;     /* 128px — respiro entre seções (desktop) */
+
+  /* ---- Bordas ---- */
+  --radius-small: 10px;
+  --radius-medium: 18px;
+  --radius-large: 32px;
+  --radius-pill: 999px;
+  /* Radius orgânico e assimétrico — toque "feito à mão" nas referências */
+  --radius-blob: 42% 58% 55% 45% / 55% 42% 58% 45%;
+
+  /* ---- Sombras ---- */
+  --shadow-small: 0 2px 8px rgba(42, 30, 77, 0.08);
+  --shadow-medium: 0 8px 24px rgba(42, 30, 77, 0.12);
+  --shadow-large: 0 20px 48px rgba(42, 30, 77, 0.18);
+  --shadow-primary: 0 12px 28px rgba(108, 79, 214, 0.35);
+
+  /* ---- Layout ---- */
+  --content-max-width: 1200px;
+  --content-max-width-narrow: 820px;
+  --section-spacing: clamp(var(--space-10), 8vw, var(--space-11));
+  --gutter: clamp(var(--space-3), 4vw, var(--space-5));
+
+  /* ---- Breakpoints (referência p/ JS/comentários; CSS usa @media literal) ---- */
+  --bp-sm: 480px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1280px;
+
+  /* ---- Transições/animação ---- */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --duration-fast: 150ms;
+  --duration-base: 250ms;
+  --duration-slow: 450ms;
+
+  /* ---- Ícone de marca (pegada, motivo pet-shop reaproveitável) ---- */
+  --icon-paw: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cellipse cx='50' cy='70' rx='27' ry='20'/%3E%3Cellipse cx='16' cy='40' rx='11' ry='15' transform='rotate(-18 16 40)'/%3E%3Cellipse cx='40' cy='17' rx='12' ry='16' transform='rotate(-6 40 17)'/%3E%3Cellipse cx='66' cy='17' rx='12' ry='16' transform='rotate(6 66 17)'/%3E%3Cellipse cx='89' cy='40' rx='11' ry='15' transform='rotate(18 89 40)'/%3E%3C/svg%3E");
+
+  --z-navbar: 100;
+  --z-mobile-menu: 200;
+  --z-floating: 90;
+  --z-modal: 300;
+}
