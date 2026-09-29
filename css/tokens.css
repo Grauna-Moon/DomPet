@@ -87,7 +87,7 @@
   /* ---- Layout ---- */
   --content-max-width: 1200px;
   --content-max-width-narrow: 820px;
-  --section-spacing: clamp(var(--space-10), 8vw, var(--space-11));
+  --section-spacing: clamp(var(--space-7), 5vw + 1.5rem, var(--space-11));
   --gutter: clamp(var(--space-3), 4vw, var(--space-5));
 
   /* ---- Breakpoints (referência p/ JS/comentários; CSS usa @media literal) ---- */
