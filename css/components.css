@@ -104,10 +104,12 @@
    NAVEGAÇÃO E CONVERSÃO
    ========================================================= */
 
-.navbar {
+.site-header {
   position: sticky;
   top: 0;
   z-index: var(--z-navbar);
+}
+.navbar {
   background: var(--color-primary);
 }
 .navbar__inner { display: flex; align-items: center; justify-content: space-between; padding-block: var(--space-3); }
@@ -146,7 +148,7 @@
 .hero {
   position: relative;
   overflow: hidden;
-  padding-block: var(--space-9) var(--space-11);
+  padding-block: var(--space-6) var(--space-11);
   background:
     radial-gradient(ellipse 90% 60% at 80% -10%, rgba(255, 255, 255, 0.08), transparent),
     linear-gradient(160deg, var(--color-secondary), var(--color-primary-dark));
@@ -429,7 +431,18 @@
 .google-rating__count { font-size: var(--text-xs); color: var(--color-muted); }
 
 /* --- Offer badge banner --- */
-.offer-banner { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: var(--space-3); background: var(--color-secondary); color: #fff; padding: var(--space-2) var(--space-4); font-size: var(--text-sm); text-align: center; }
+.offer-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  background: var(--color-secondary);
+  color: #fff;
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+  text-align: center;
+}
 .offer-banner strong { color: var(--color-accent); }
 
 /* --- Animations (fade-up/scale-in used via JS observer) --- */
