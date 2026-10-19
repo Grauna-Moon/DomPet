@@ -157,6 +157,8 @@
   transition: transform var(--duration-slow) var(--ease-standard);
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .mobile-menu.is-open { transform: translateX(0); }
 .mobile-menu__header {
