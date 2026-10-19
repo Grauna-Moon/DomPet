@@ -19,9 +19,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.querySelector(".navbar__toggle");
   const menu = document.querySelector(".mobile-menu");
   const closeBtn = document.querySelector(".mobile-menu__close");
+  const navbar = document.querySelector(".navbar");
   if (toggle && menu) {
-    const openMenu = () => { menu.classList.add("is-open"); document.body.style.overflow = "hidden"; };
-    const closeMenu = () => { menu.classList.remove("is-open"); document.body.style.overflow = ""; };
+    const openMenu = () => {
+      menu.classList.add("is-open");
+      navbar?.classList.add("is-menu-open");
+      document.body.style.overflow = "hidden";
+    };
+    const closeMenu = () => {
+      menu.classList.remove("is-open");
+      navbar?.classList.remove("is-menu-open");
+      document.body.style.overflow = "";
+    };
     toggle.addEventListener("click", openMenu);
     closeBtn?.addEventListener("click", closeMenu);
     menu.querySelectorAll("a").forEach((a) => a.addEventListener("click", closeMenu));
@@ -86,7 +95,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // ---- Navbar shadow on scroll ----
-  const navbar = document.querySelector(".navbar");
   if (navbar) {
     window.addEventListener("scroll", () => {
       navbar.style.boxShadow = window.scrollY > 8 ? "var(--shadow-small)" : "none";
