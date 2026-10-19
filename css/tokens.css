@@ -75,6 +75,7 @@
   --radius-medium: 18px;
   --radius-large: 32px;
   --radius-pill: 999px;
+  --radius-pill-soft: 10px;
   /* Radius orgânico e assimétrico — toque "feito à mão" nas referências */
   --radius-blob: 42% 58% 55% 45% / 55% 42% 58% 45%;
 
