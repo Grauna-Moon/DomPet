@@ -83,7 +83,7 @@
   background: var(--color-pink);
   color: #fff;
 }
-.badge--accent { background: var(--color-accent); color: var(--color-on-accent); }
+.badge--accent { background: var(--color-accent); color: var(--color-on-accent); border: none; }
 .badge--outline { background: transparent; border: 1.5px solid var(--color-border); color: var(--color-muted); }
 
 /* --- Icon --- */
