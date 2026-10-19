@@ -11,8 +11,11 @@ function buildWhatsAppLink(message) {
 
 document.addEventListener("DOMContentLoaded", () => {
   // Preenche todos os links de WhatsApp com mensagem contextual (data-wa-message)
+  // e abre numa nova aba, sem tirar o visitante do site
   document.querySelectorAll("[data-whatsapp]").forEach((el) => {
     el.href = buildWhatsAppLink(el.dataset.waMessage);
+    el.target = "_blank";
+    el.rel = "noopener";
   });
 
   // ---- Mobile menu ----
